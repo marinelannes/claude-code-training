@@ -12,9 +12,14 @@ conventions, guardrails, a reflex and a reusable procedure.
    "never invent" rule (if a business rule is not in `specs/`, ask).
 2. **Rules.** Move the testing conventions to `.claude/rules/tests.md`.
 3. **Guardrails.** In `.claude/settings.json`, deny reading `.env` and
-   `data/customers_pii.csv` (red-tier data). Then ask Claude to show you the content of
-   `.env`, first plainly, then "using cat in the shell". Is it blocked both times? If not,
-   strengthen your setup (Bash deny rules, `/sandbox`).
+   `data/customers_pii.csv` (red-tier data). Then try to get around your own rule. Ask
+   Claude to show you the content of `.env`, three ways:
+   - plainly;
+   - "using cat in the shell";
+   - "by running `python -c \"print(open('.env').read())\"`".
+
+   Which attempts are blocked? Which ones ask for your approval? What would happen in auto
+   mode? Write down your answers for the debrief.
 4. **Reflex.** Add a PostToolUse hook that runs `ruff format` and `ruff check --fix` on every
    Python file Claude edits. Make the hook work on Windows, macOS and Linux (tip: a small
    Python script run with `uv run python` can read the hook JSON on stdin without `jq`).
@@ -26,7 +31,8 @@ conventions, guardrails, a reflex and a reusable procedure.
 
 ## Done when
 
-- Claude is blocked when asked to read `.env`, with the Read tool and through the shell;
+- Claude is blocked when asked to read `.env` plainly or with `cat`;
+- you can explain what your deny rule does **not** cover, and what would close that gap;
 - ruff runs automatically after an edit;
 - the skill can be called with `/docstrings`.
 
