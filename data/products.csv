@@ -1,0 +1,41 @@
+product_id,name,category,unit_price,active
+P-0001,Desk,Furniture,117.06,true
+P-0002,Office Chair,Furniture,248.37,false
+P-0003,Bookshelf,Furniture,368.32,true
+P-0004,Filing Cabinet,Furniture,374.42,true
+P-0005,Standing Desk,Furniture,106.26,true
+P-0006,Meeting Table,Furniture,185.33,true
+P-0007,Drawer Unit,Furniture,403.74,true
+P-0008,Footrest,Furniture,314.65,true
+P-0009,Monitor Arm,Furniture,414.23,true
+P-0010,Coat Stand,Furniture,398.01,true
+P-0011,A4 Paper Ream,Paper,21.60,true
+P-0012,A3 Paper Ream,Paper,19.56,true
+P-0013,Sticky Notes,Paper,11.32,true
+P-0014,Notebook A5,Paper,1.60,true
+P-0015,Envelopes C4,Paper,4.80,true
+P-0016,Printer Labels,Paper,6.03,true
+P-0017,Flip Chart Pad,Paper,13.26,true
+P-0018,Index Cards,Paper,5.51,true
+P-0019,Graph Paper,Paper,19.91,true
+P-0020,Card Stock,Paper,1.97,false
+P-0021,Wireless Mouse,Electronics,169.65,true
+P-0022,Keyboard,Electronics,111.96,true
+P-0023,USB-C Hub,Electronics,77.88,true
+P-0024,Webcam,Electronics,139.16,false
+P-0025,Headset,Electronics,91.41,true
+P-0026,Desk Lamp,Electronics,122.92,true
+P-0027,Label Printer,Electronics,125.86,true
+P-0028,Shredder,Electronics,132.32,true
+P-0029,Calculator,Electronics,177.29,true
+P-0030,Power Strip,Electronics,34.00,true
+P-0031,Ballpoint Pens (10),Supplies,15.70,true
+P-0032,Stapler,Supplies,7.87,true
+P-0033,Staples (5000),Supplies,2.73,true
+P-0034,Highlighters (4),Supplies,12.31,true
+P-0035,Scissors,Supplies,11.91,true
+P-0036,Tape Dispenser,Supplies,6.88,true
+P-0037,Paper Clips (100),Supplies,6.79,false
+P-0038,Whiteboard Markers,Supplies,10.26,true
+P-0039,Desk Organizer,Supplies,3.78,true
+P-0040,Binder Clips (24),Supplies,18.85,true

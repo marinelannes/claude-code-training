@@ -1,0 +1,151 @@
+customer_id,full_name,email,phone,country,tier,first_order_date
+C-0001,Sacha Demoreau,sacha.demoreau.001@example.com,+49 150 0000 0001,DE,standard,2025-08-22
+C-0002,Toni Example,toni.example.002@example.com,+49 150 0000 0002,DE,standard,2025-09-06
+C-0003,Toni Fakeley,toni.fakeley.003@example.com,+32 470 00 0003,BE,standard,2025-03-06
+C-0004,Toni Fictivo,toni.fictivo.004@example.com,+49 150 0000 0004,DE,gold,2024-08-17
+C-0005,Camille Sample,camille.sample.005@example.com,+32 470 00 0005,BE,standard,2026-02-15
+C-0006,Robin Madeup,robin.madeup.006@example.com,+49 150 0000 0006,DE,standard,2026-01-07
+C-0007,Dominique Example,dominique.example.007@example.com,+49 150 0000 0007,DE,standard,2026-01-16
+C-0008,Morgan Fictivo,morgan.fictivo.008@example.com,+49 150 0000 0008,DE,standard,2025-07-15
+C-0009,Toni Fakeley,toni.fakeley.009@example.com,+49 150 0000 0009,DE,standard,2024-10-02
+C-0010,Alex Sample,alex.sample.010@example.com,+33 6 00 00 0010,FR,standard,2025-04-14
+C-0011,Toni Dummett,toni.dummett.011@example.com,+32 470 00 0011,BE,standard,2025-05-12
+C-0012,Maxime Fictivo,maxime.fictivo.012@example.com,+34 600 000 0012,ES,standard,2025-03-20
+C-0013,Sam Mockford,sam.mockford.013@example.com,+33 6 00 00 0013,FR,standard,2024-04-10
+C-0014,Maxime Madeup,maxime.madeup.014@example.com,+34 600 000 0014,ES,standard,2026-02-11
+C-0015,Maxime Placeholder,maxime.placeholder.015@example.com,+32 470 00 0015,BE,standard,2025-05-05
+C-0016,Jordan Notreal,jordan.notreal.016@example.com,+33 6 00 00 0016,FR,standard,2024-04-08
+C-0017,Charlie Madeup,charlie.madeup.017@example.com,+32 470 00 0017,BE,gold,2024-01-15
+C-0018,Jordan Sample,jordan.sample.018@example.com,+49 150 0000 0018,DE,standard,2026-01-03
+C-0019,Charlie Testwell,charlie.testwell.019@example.com,+33 6 00 00 0019,FR,gold,2025-07-13
+C-0020,Morgan Notreal,morgan.notreal.020@example.com,+34 600 000 0020,ES,standard,2024-01-06
+C-0021,Eden Notreal,eden.notreal.021@example.com,+49 150 0000 0021,DE,standard,2025-05-18
+C-0022,Camille Fictivo,camille.fictivo.022@example.com,+33 6 00 00 0022,FR,standard,2026-02-09
+C-0023,Lou Example,lou.example.023@example.com,+49 150 0000 0023,DE,gold,2024-05-18
+C-0024,Lou Fictivo,lou.fictivo.024@example.com,+49 150 0000 0024,DE,standard,2025-06-16
+C-0025,Charlie Fakeley,charlie.fakeley.025@example.com,+33 6 00 00 0025,FR,gold,2024-03-16
+C-0026,Sam Dummett,sam.dummett.026@example.com,+49 150 0000 0026,DE,standard,2024-01-27
+C-0027,Alex Fictivo,alex.fictivo.027@example.com,+49 150 0000 0027,DE,standard,2026-02-11
+C-0028,Eden Example,eden.example.028@example.com,+49 150 0000 0028,DE,standard,2026-01-16
+C-0029,Noa Placeholder,noa.placeholder.029@example.com,+49 150 0000 0029,DE,standard,2025-09-30
+C-0030,Eden Demoreau,eden.demoreau.030@example.com,+49 150 0000 0030,DE,standard,2024-03-12
+C-0031,Andrea Sample,andrea.sample.031@example.com,+33 6 00 00 0031,FR,standard,2026-02-06
+C-0032,Sam Demoreau,sam.demoreau.032@example.com,+32 470 00 0032,BE,standard,2025-05-10
+C-0033,Alex Placeholder,alex.placeholder.033@example.com,+49 150 0000 0033,DE,standard,2025-06-13
+C-0034,Camille Placeholder,camille.placeholder.034@example.com,+49 150 0000 0034,DE,gold,2024-10-06
+C-0035,Kim Fictivo,kim.fictivo.035@example.com,+49 150 0000 0035,DE,gold,2026-01-03
+C-0036,Noa Dummett,noa.dummett.036@example.com,+33 6 00 00 0036,FR,standard,2026-02-26
+C-0037,Lou Demoreau,lou.demoreau.037@example.com,+33 6 00 00 0037,FR,standard,2025-03-31
+C-0038,Robin Fictivo,robin.fictivo.038@example.com,+34 600 000 0038,ES,standard,2024-04-06
+C-0039,Charlie Testwell,charlie.testwell.039@example.com,+33 6 00 00 0039,FR,gold,2025-04-10
+C-0040,Eden Fakeley,eden.fakeley.040@example.com,+49 150 0000 0040,DE,standard,2026-01-06
+C-0041,Noa Sample,noa.sample.041@example.com,+33 6 00 00 0041,FR,gold,2025-07-29
+C-0042,Charlie Example,charlie.example.042@example.com,+49 150 0000 0042,DE,standard,2025-08-04
+C-0043,Charlie Specimen,charlie.specimen.043@example.com,+33 6 00 00 0043,FR,standard,2025-07-23
+C-0044,Camille Example,camille.example.044@example.com,+34 600 000 0044,ES,gold,2025-03-22
+C-0045,Noa Example,noa.example.045@example.com,+49 150 0000 0045,DE,standard,2024-07-08
+C-0046,Robin Fictivo,robin.fictivo.046@example.com,+33 6 00 00 0046,FR,standard,2024-03-06
+C-0047,Lou Dummett,lou.dummett.047@example.com,+33 6 00 00 0047,FR,standard,2024-01-15
+C-0048,Kim Mockford,kim.mockford.048@example.com,+49 150 0000 0048,DE,gold,2024-04-08
+C-0049,Dominique Sample,dominique.sample.049@example.com,+33 6 00 00 0049,FR,gold,2025-07-28
+C-0050,Sacha Dummett,sacha.dummett.050@example.com,+34 600 000 0050,ES,standard,2026-02-07
+C-0051,Sam Fakeley,sam.fakeley.051@example.com,+33 6 00 00 0051,FR,standard,2025-04-18
+C-0052,Kim Notreal,kim.notreal.052@example.com,+32 470 00 0052,BE,standard,2025-05-28
+C-0053,Morgan Fakeley,morgan.fakeley.053@example.com,+33 6 00 00 0053,FR,standard,2024-02-29
+C-0054,Kim Sample,kim.sample.054@example.com,+33 6 00 00 0054,FR,standard,2024-05-05
+C-0055,Lou Fakeley,lou.fakeley.055@example.com,+33 6 00 00 0055,FR,standard,2025-07-09
+C-0056,Eden Testwell,eden.testwell.056@example.com,+49 150 0000 0056,DE,standard,2024-04-25
+C-0057,Noa Specimen,noa.specimen.057@example.com,+33 6 00 00 0057,FR,gold,2025-06-19
+C-0058,Sacha Specimen,sacha.specimen.058@example.com,+49 150 0000 0058,DE,standard,2024-01-30
+C-0059,Kim Specimen,kim.specimen.059@example.com,+33 6 00 00 0059,FR,standard,2025-01-21
+C-0060,Dominique Fakeley,dominique.fakeley.060@example.com,+49 150 0000 0060,DE,standard,2024-07-06
+C-0061,Alex Notreal,alex.notreal.061@example.com,+34 600 000 0061,ES,standard,2025-07-22
+C-0062,Andrea Mockford,andrea.mockford.062@example.com,+34 600 000 0062,ES,standard,2024-01-17
+C-0063,Morgan Fictivo,morgan.fictivo.063@example.com,+49 150 0000 0063,DE,standard,2024-11-18
+C-0064,Camille Notreal,camille.notreal.064@example.com,+49 150 0000 0064,DE,standard,2025-07-20
+C-0065,Sam Notreal,sam.notreal.065@example.com,+32 470 00 0065,BE,standard,2024-09-28
+C-0066,Eden Notreal,eden.notreal.066@example.com,+49 150 0000 0066,DE,standard,2024-02-27
+C-0067,Alex Notreal,alex.notreal.067@example.com,+32 470 00 0067,BE,standard,2024-08-15
+C-0068,Camille Madeup,camille.madeup.068@example.com,+32 470 00 0068,BE,standard,2025-01-03
+C-0069,Dominique Fictivo,dominique.fictivo.069@example.com,+34 600 000 0069,ES,standard,2024-07-24
+C-0070,Sacha Dummett,sacha.dummett.070@example.com,+49 150 0000 0070,DE,standard,2025-04-30
+C-0071,Lou Testwell,lou.testwell.071@example.com,+33 6 00 00 0071,FR,standard,2025-05-11
+C-0072,Alex Dummett,alex.dummett.072@example.com,+34 600 000 0072,ES,standard,2026-02-18
+C-0073,Kim Sample,kim.sample.073@example.com,+49 150 0000 0073,DE,gold,2025-01-16
+C-0074,Morgan Placeholder,morgan.placeholder.074@example.com,+34 600 000 0074,ES,gold,2024-01-19
+C-0075,Charlie Madeup,charlie.madeup.075@example.com,+49 150 0000 0075,DE,standard,2025-02-06
+C-0076,Andrea Fictivo,andrea.fictivo.076@example.com,+32 470 00 0076,BE,standard,2025-10-21
+C-0077,Noa Fictivo,noa.fictivo.077@example.com,+33 6 00 00 0077,FR,gold,2025-02-02
+C-0078,Eden Fictivo,eden.fictivo.078@example.com,+33 6 00 00 0078,FR,gold,2025-08-29
+C-0079,Charlie Placeholder,charlie.placeholder.079@example.com,+32 470 00 0079,BE,standard,2024-10-19
+C-0080,Sacha Placeholder,sacha.placeholder.080@example.com,+32 470 00 0080,BE,gold,2025-10-06
+C-0081,Alex Specimen,alex.specimen.081@example.com,+49 150 0000 0081,DE,standard,2024-12-30
+C-0082,Noa Madeup,noa.madeup.082@example.com,+49 150 0000 0082,DE,gold,2026-01-09
+C-0083,Camille Placeholder,camille.placeholder.083@example.com,+33 6 00 00 0083,FR,gold,2025-11-14
+C-0084,Alex Dummett,alex.dummett.084@example.com,+33 6 00 00 0084,FR,standard,2025-06-28
+C-0085,Camille Specimen,camille.specimen.085@example.com,+49 150 0000 0085,DE,gold,2024-11-30
+C-0086,Toni Example,toni.example.086@example.com,+32 470 00 0086,BE,standard,2025-01-25
+C-0087,Morgan Specimen,morgan.specimen.087@example.com,+33 6 00 00 0087,FR,gold,2025-04-30
+C-0088,Toni Example,toni.example.088@example.com,+49 150 0000 0088,DE,standard,2025-01-02
+C-0089,Maxime Specimen,maxime.specimen.089@example.com,+33 6 00 00 0089,FR,gold,2024-03-30
+C-0090,Toni Mockford,toni.mockford.090@example.com,+33 6 00 00 0090,FR,standard,2024-06-21
+C-0091,Eden Fakeley,eden.fakeley.091@example.com,+49 150 0000 0091,DE,standard,2025-11-03
+C-0092,Toni Fakeley,toni.fakeley.092@example.com,+33 6 00 00 0092,FR,gold,2025-04-19
+C-0093,Dominique Madeup,dominique.madeup.093@example.com,+32 470 00 0093,BE,standard,2024-12-24
+C-0094,Kim Specimen,kim.specimen.094@example.com,+33 6 00 00 0094,FR,gold,2025-08-03
+C-0095,Camille Fakeley,camille.fakeley.095@example.com,+33 6 00 00 0095,FR,standard,2024-11-23
+C-0096,Morgan Demoreau,morgan.demoreau.096@example.com,+33 6 00 00 0096,FR,standard,2024-10-01
+C-0097,Dominique Dummett,dominique.dummett.097@example.com,+32 470 00 0097,BE,standard,2024-05-06
+C-0098,Morgan Mockford,morgan.mockford.098@example.com,+49 150 0000 0098,DE,standard,2025-02-13
+C-0099,Alex Fictivo,alex.fictivo.099@example.com,+34 600 000 0099,ES,standard,2026-01-03
+C-0100,Robin Notreal,robin.notreal.100@example.com,+34 600 000 0100,ES,standard,2025-11-25
+C-0101,Charlie Fakeley,charlie.fakeley.101@example.com,+33 6 00 00 0101,FR,standard,2025-02-13
+C-0102,Noa Sample,noa.sample.102@example.com,+33 6 00 00 0102,FR,standard,2024-05-13
+C-0103,Eden Specimen,eden.specimen.103@example.com,+49 150 0000 0103,DE,standard,2025-05-02
+C-0104,Toni Dummett,toni.dummett.104@example.com,+33 6 00 00 0104,FR,standard,2025-10-13
+C-0105,Robin Notreal,robin.notreal.105@example.com,+32 470 00 0105,BE,standard,2024-01-19
+C-0106,Charlie Demoreau,charlie.demoreau.106@example.com,+49 150 0000 0106,DE,standard,2025-01-13
+C-0107,Jordan Fictivo,jordan.fictivo.107@example.com,+49 150 0000 0107,DE,standard,2024-01-12
+C-0108,Robin Placeholder,robin.placeholder.108@example.com,+33 6 00 00 0108,FR,standard,2025-04-19
+C-0109,Charlie Specimen,charlie.specimen.109@example.com,+49 150 0000 0109,DE,standard,2026-02-02
+C-0110,Kim Madeup,kim.madeup.110@example.com,+49 150 0000 0110,DE,standard,2024-05-16
+C-0111,Robin Sample,robin.sample.111@example.com,+33 6 00 00 0111,FR,standard,2024-07-08
+C-0112,Dominique Demoreau,dominique.demoreau.112@example.com,+49 150 0000 0112,DE,standard,2024-12-21
+C-0113,Eden Specimen,eden.specimen.113@example.com,+49 150 0000 0113,DE,standard,2024-11-30
+C-0114,Morgan Sample,morgan.sample.114@example.com,+49 150 0000 0114,DE,gold,2025-05-07
+C-0115,Sacha Mockford,sacha.mockford.115@example.com,+34 600 000 0115,ES,standard,2025-01-11
+C-0116,Morgan Fictivo,morgan.fictivo.116@example.com,+34 600 000 0116,ES,standard,2026-01-21
+C-0117,Sam Fakeley,sam.fakeley.117@example.com,+32 470 00 0117,BE,standard,2026-01-03
+C-0118,Lou Demoreau,lou.demoreau.118@example.com,+49 150 0000 0118,DE,standard,2025-06-18
+C-0119,Eden Demoreau,eden.demoreau.119@example.com,+33 6 00 00 0119,FR,standard,2024-07-04
+C-0120,Jordan Fictivo,jordan.fictivo.120@example.com,+32 470 00 0120,BE,gold,2024-09-20
+C-0121,Andrea Notreal,andrea.notreal.121@example.com,+33 6 00 00 0121,FR,standard,2024-08-07
+C-0122,Alex Demoreau,alex.demoreau.122@example.com,+33 6 00 00 0122,FR,standard,2025-06-23
+C-0123,Camille Fictivo,camille.fictivo.123@example.com,+33 6 00 00 0123,FR,standard,2026-01-05
+C-0124,Camille Fictivo,camille.fictivo.124@example.com,+49 150 0000 0124,DE,standard,2025-01-07
+C-0125,Andrea Fictivo,andrea.fictivo.125@example.com,+49 150 0000 0125,DE,standard,2024-06-04
+C-0126,Camille Madeup,camille.madeup.126@example.com,+33 6 00 00 0126,FR,standard,2025-11-03
+C-0127,Sam Notreal,sam.notreal.127@example.com,+32 470 00 0127,BE,standard,2024-11-02
+C-0128,Noa Placeholder,noa.placeholder.128@example.com,+33 6 00 00 0128,FR,standard,2024-12-31
+C-0129,Camille Demoreau,camille.demoreau.129@example.com,+33 6 00 00 0129,FR,standard,2024-07-09
+C-0130,Camille Fakeley,camille.fakeley.130@example.com,+49 150 0000 0130,DE,standard,2025-07-13
+C-0131,Alex Mockford,alex.mockford.131@example.com,+33 6 00 00 0131,FR,standard,2025-07-09
+C-0132,Jordan Demoreau,jordan.demoreau.132@example.com,+49 150 0000 0132,DE,standard,2024-11-28
+C-0133,Camille Madeup,camille.madeup.133@example.com,+49 150 0000 0133,DE,standard,2024-02-29
+C-0134,Robin Dummett,robin.dummett.134@example.com,+49 150 0000 0134,DE,standard,2024-09-20
+C-0135,Eden Sample,eden.sample.135@example.com,+33 6 00 00 0135,FR,gold,2024-04-02
+C-0136,Kim Notreal,kim.notreal.136@example.com,+49 150 0000 0136,DE,standard,2026-01-07
+C-0137,Dominique Testwell,dominique.testwell.137@example.com,+49 150 0000 0137,DE,standard,2025-01-16
+C-0138,Noa Fictivo,noa.fictivo.138@example.com,+32 470 00 0138,BE,standard,2025-03-09
+C-0139,Maxime Dummett,maxime.dummett.139@example.com,+34 600 000 0139,ES,standard,2026-01-02
+C-0140,Maxime Fictivo,maxime.fictivo.140@example.com,+49 150 0000 0140,DE,gold,2024-08-04
+C-0141,Charlie Example,charlie.example.141@example.com,+34 600 000 0141,ES,standard,2025-11-26
+C-0142,Noa Example,noa.example.142@example.com,+33 6 00 00 0142,FR,standard,2024-07-12
+C-0143,Kim Sample,kim.sample.143@example.com,+49 150 0000 0143,DE,gold,2025-10-11
+C-0144,Morgan Mockford,morgan.mockford.144@example.com,+34 600 000 0144,ES,standard,2025-05-03
+C-0145,Maxime Mockford,maxime.mockford.145@example.com,+34 600 000 0145,ES,standard,2026-01-03
+C-0146,Robin Placeholder,robin.placeholder.146@example.com,+49 150 0000 0146,DE,standard,2025-04-11
+C-0147,Andrea Specimen,andrea.specimen.147@example.com,+49 150 0000 0147,DE,gold,2025-12-15
+C-0148,Eden Mockford,eden.mockford.148@example.com,+32 470 00 0148,BE,gold,2026-01-01
+C-0149,Sacha Fictivo,sacha.fictivo.149@example.com,+34 600 000 0149,ES,standard,2026-02-09
+C-0150,Robin Mockford,robin.mockford.150@example.com,+33 6 00 00 0150,FR,gold,2024-02-12
