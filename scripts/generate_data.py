@@ -30,32 +30,99 @@ ORDER_COLUMNS = [
 
 CATALOGUE = {
     "Furniture": (
-        ["Desk", "Office Chair", "Bookshelf", "Filing Cabinet", "Standing Desk",
-         "Meeting Table", "Drawer Unit", "Footrest", "Monitor Arm", "Coat Stand"],
+        [
+            "Desk",
+            "Office Chair",
+            "Bookshelf",
+            "Filing Cabinet",
+            "Standing Desk",
+            "Meeting Table",
+            "Drawer Unit",
+            "Footrest",
+            "Monitor Arm",
+            "Coat Stand",
+        ],
         (3900, 42000),
     ),
     "Paper": (
-        ["A4 Paper Ream", "A3 Paper Ream", "Sticky Notes", "Notebook A5", "Envelopes C4",
-         "Printer Labels", "Flip Chart Pad", "Index Cards", "Graph Paper", "Card Stock"],
+        [
+            "A4 Paper Ream",
+            "A3 Paper Ream",
+            "Sticky Notes",
+            "Notebook A5",
+            "Envelopes C4",
+            "Printer Labels",
+            "Flip Chart Pad",
+            "Index Cards",
+            "Graph Paper",
+            "Card Stock",
+        ],
         (150, 2400),
     ),
     "Electronics": (
-        ["Wireless Mouse", "Keyboard", "USB-C Hub", "Webcam", "Headset",
-         "Desk Lamp", "Label Printer", "Shredder", "Calculator", "Power Strip"],
+        [
+            "Wireless Mouse",
+            "Keyboard",
+            "USB-C Hub",
+            "Webcam",
+            "Headset",
+            "Desk Lamp",
+            "Label Printer",
+            "Shredder",
+            "Calculator",
+            "Power Strip",
+        ],
         (900, 18000),
     ),
     "Supplies": (
-        ["Ballpoint Pens (10)", "Stapler", "Staples (5000)", "Highlighters (4)", "Scissors",
-         "Tape Dispenser", "Paper Clips (100)", "Whiteboard Markers", "Desk Organizer",
-         "Binder Clips (24)"],
+        [
+            "Ballpoint Pens (10)",
+            "Stapler",
+            "Staples (5000)",
+            "Highlighters (4)",
+            "Scissors",
+            "Tape Dispenser",
+            "Paper Clips (100)",
+            "Whiteboard Markers",
+            "Desk Organizer",
+            "Binder Clips (24)",
+        ],
         (90, 1900),
     ),
 }
 
-FIRST_NAMES = ["Alex", "Sam", "Jordan", "Robin", "Camille", "Noa", "Charlie", "Dominique",
-               "Morgan", "Lou", "Eden", "Sacha", "Andrea", "Kim", "Maxime", "Toni"]
-LAST_NAMES = ["Sample", "Example", "Placeholder", "Testwell", "Mockford", "Dummett",
-              "Fakeley", "Demoreau", "Fictivo", "Specimen", "Notreal", "Madeup"]
+FIRST_NAMES = [
+    "Alex",
+    "Sam",
+    "Jordan",
+    "Robin",
+    "Camille",
+    "Noa",
+    "Charlie",
+    "Dominique",
+    "Morgan",
+    "Lou",
+    "Eden",
+    "Sacha",
+    "Andrea",
+    "Kim",
+    "Maxime",
+    "Toni",
+]
+LAST_NAMES = [
+    "Sample",
+    "Example",
+    "Placeholder",
+    "Testwell",
+    "Mockford",
+    "Dummett",
+    "Fakeley",
+    "Demoreau",
+    "Fictivo",
+    "Specimen",
+    "Notreal",
+    "Madeup",
+]
 COUNTRIES = ["FR", "DE", "ES", "BE"]
 COUNTRY_WEIGHTS = [40, 30, 15, 15]
 PHONE_PREFIX = {"FR": "+33 6 00 00", "DE": "+49 150 0000", "ES": "+34 600 000", "BE": "+32 470 00"}
@@ -73,13 +140,15 @@ def make_products(rng: random.Random) -> list[dict]:
     products = []
     for category, (names, (low, high)) in CATALOGUE.items():
         for name in names:
-            products.append({
-                "product_id": f"P-{len(products) + 1:04d}",
-                "name": name,
-                "category": category,
-                "unit_price": money(rng.randint(low, high)),
-                "active": "true",
-            })
+            products.append(
+                {
+                    "product_id": f"P-{len(products) + 1:04d}",
+                    "name": name,
+                    "category": category,
+                    "unit_price": money(rng.randint(low, high)),
+                    "active": "true",
+                }
+            )
     for index in rng.sample(range(len(products)), 4):
         products[index]["active"] = "false"
     return products
@@ -90,15 +159,19 @@ def make_customers(rng: random.Random) -> list[dict]:
     for i in range(1, 151):
         first, last = rng.choice(FIRST_NAMES), rng.choice(LAST_NAMES)
         country = rng.choices(COUNTRIES, COUNTRY_WEIGHTS)[0]
-        customers.append({
-            "customer_id": f"C-{i:04d}",
-            "full_name": f"{first} {last}",
-            "email": f"{first}.{last}.{i:03d}@example.com".lower(),
-            "phone": f"{PHONE_PREFIX[country]} {i:04d}",
-            "country": country,
-            "tier": "gold" if rng.random() < 0.2 else "standard",
-            "first_order_date": random_day(rng, date(2024, 1, 1), date(2025, 12, 31)).isoformat(),
-        })
+        customers.append(
+            {
+                "customer_id": f"C-{i:04d}",
+                "full_name": f"{first} {last}",
+                "email": f"{first}.{last}.{i:03d}@example.com".lower(),
+                "phone": f"{PHONE_PREFIX[country]} {i:04d}",
+                "country": country,
+                "tier": "gold" if rng.random() < 0.2 else "standard",
+                "first_order_date": random_day(
+                    rng, date(2024, 1, 1), date(2025, 12, 31)
+                ).isoformat(),
+            }
+        )
     return customers
 
 
@@ -137,33 +210,61 @@ def make_orders(rng, month_start, month_end, prefix, customers, new_ids, product
         n_lines = rng.choices([1, 2, 3, 4, 5, 6], [20, 25, 25, 15, 10, 5])[0]
         for product in rng.sample(active, n_lines):
             line_no += 1
-            rows.append({
-                "order_id": f"O-{prefix}-{order_no:04d}",
-                "order_line_id": f"L-{prefix}-{line_no:05d}",
-                "order_date": order_date.isoformat(),
-                "customer_id": customer_id,
-                "product_id": product["product_id"],
-                "quantity": str(pick_quantity(rng)),
-                "unit_price": product["unit_price"],
-                "country": customer["country"],
-                "promo_code": promo,
-            })
+            rows.append(
+                {
+                    "order_id": f"O-{prefix}-{order_no:04d}",
+                    "order_line_id": f"L-{prefix}-{line_no:05d}",
+                    "order_date": order_date.isoformat(),
+                    "customer_id": customer_id,
+                    "product_id": product["product_id"],
+                    "quantity": str(pick_quantity(rng)),
+                    "unit_price": product["unit_price"],
+                    "country": customer["country"],
+                    "promo_code": promo,
+                }
+            )
     return rows
 
 
 CORRUPTIONS = {
-    "missing_value": [("customer_id", ""), ("product_id", ""), ("quantity", ""),
-                      ("order_date", ""), ("country", "")],
-    "bad_date": [("order_date", "2026/02/14"), ("order_date", "14-02-2026"),
-                 ("order_date", "2026-02-30"), ("order_date", "Feb 3 2026")],
-    "out_of_period": [("order_date", "2026-01-31"), ("order_date", "2026-03-01"),
-                      ("order_date", "2025-02-10"), ("order_date", "2026-03-15")],
-    "bad_quantity": [("quantity", "0"), ("quantity", "-3"), ("quantity", "2.5"),
-                     ("quantity", "two"), ("quantity", "-1")],
-    "bad_price": [("unit_price", "-4.50"), ("unit_price", "-0.01"),
-                  ("unit_price", "12,50"), ("unit_price", "n/a")],
-    "unknown_product": [("product_id", "P-9999"), ("product_id", "P-0000"),
-                        ("product_id", "P-0412"), ("product_id", "X-0001")],
+    "missing_value": [
+        ("customer_id", ""),
+        ("product_id", ""),
+        ("quantity", ""),
+        ("order_date", ""),
+        ("country", ""),
+    ],
+    "bad_date": [
+        ("order_date", "2026/02/14"),
+        ("order_date", "14-02-2026"),
+        ("order_date", "2026-02-30"),
+        ("order_date", "Feb 3 2026"),
+    ],
+    "out_of_period": [
+        ("order_date", "2026-01-31"),
+        ("order_date", "2026-03-01"),
+        ("order_date", "2025-02-10"),
+        ("order_date", "2026-03-15"),
+    ],
+    "bad_quantity": [
+        ("quantity", "0"),
+        ("quantity", "-3"),
+        ("quantity", "2.5"),
+        ("quantity", "two"),
+        ("quantity", "-1"),
+    ],
+    "bad_price": [
+        ("unit_price", "-4.50"),
+        ("unit_price", "-0.01"),
+        ("unit_price", "12,50"),
+        ("unit_price", "n/a"),
+    ],
+    "unknown_product": [
+        ("product_id", "P-9999"),
+        ("product_id", "P-0000"),
+        ("product_id", "P-0412"),
+        ("product_id", "X-0001"),
+    ],
     "bad_country": [("country", "IT"), ("country", "UK"), ("country", "NL"), ("country", "XX")],
 }
 
@@ -217,10 +318,26 @@ def main() -> None:
         if customer["customer_id"] in new_jan | new_feb:
             customer["first_order_date"] = "2099-01-01"
 
-    january = make_orders(rng, date(2026, 1, 1), date(2026, 1, 31), "202601",
-                          customers, new_jan, products, n_orders=525)
-    february = make_orders(rng, date(2026, 2, 1), date(2026, 2, 28), "202602",
-                           customers, new_feb, products, n_orders=172)
+    january = make_orders(
+        rng,
+        date(2026, 1, 1),
+        date(2026, 1, 31),
+        "202601",
+        customers,
+        new_jan,
+        products,
+        n_orders=525,
+    )
+    february = make_orders(
+        rng,
+        date(2026, 2, 1),
+        date(2026, 2, 28),
+        "202602",
+        customers,
+        new_feb,
+        products,
+        n_orders=172,
+    )
     february = dirty_february(rng, february, products)
 
     DATA_DIR.mkdir(exist_ok=True)
@@ -228,8 +345,10 @@ def main() -> None:
     write_csv(DATA_DIR / "customers_pii.csv", list(customers[0]), customers)
     write_csv(DATA_DIR / "orders_2026_01.csv", ORDER_COLUMNS, january)
     write_csv(DATA_DIR / "orders_2026_02_raw.csv", ORDER_COLUMNS, february)
-    print(f"products={len(products)} customers={len(customers)} "
-          f"january_lines={len(january)} february_lines={len(february)}")
+    print(
+        f"products={len(products)} customers={len(customers)} "
+        f"january_lines={len(january)} february_lines={len(february)}"
+    )
 
 
 if __name__ == "__main__":

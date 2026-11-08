@@ -16,9 +16,7 @@ from orders.loaders import load_catalogue
 
 DATA = Path(__file__).resolve().parents[2] / "data"
 FEBRUARY = DATA / "orders_2026_02_raw.csv"
-HEADER = (
-    "order_id,order_line_id,order_date,customer_id,product_id,quantity,unit_price,country,promo_code"
-)
+HEADER = "order_id,order_line_id,order_date,customer_id,product_id,quantity,unit_price,country,promo_code"
 VALID = "O-1,L-1,2026-02-10,C-0001,P-0001,2,117.06,FR,"
 
 
@@ -71,15 +69,21 @@ def test_empty_promo_code_becomes_none(tmp_path, catalogue):
 
 
 def test_missing_required_column_raises(tmp_path, catalogue):
-    path = write_csv(tmp_path, "O-1,L-1,2026-02-10,C-0001,P-0001,2,FR",
-                     header="order_id,order_line_id,order_date,customer_id,product_id,quantity,country")
+    path = write_csv(
+        tmp_path,
+        "O-1,L-1,2026-02-10,C-0001,P-0001,2,FR",
+        header="order_id,order_line_id,order_date,customer_id,product_id,quantity,country",
+    )
     with pytest.raises(MissingColumnError):
         load_orders(path, catalogue, "2026-02")
 
 
 def test_promo_code_column_is_optional(tmp_path, catalogue):
-    path = write_csv(tmp_path, "O-1,L-1,2026-02-10,C-0001,P-0001,2,117.06,FR",
-                     header=HEADER.removesuffix(",promo_code"))
+    path = write_csv(
+        tmp_path,
+        "O-1,L-1,2026-02-10,C-0001,P-0001,2,117.06,FR",
+        header=HEADER.removesuffix(",promo_code"),
+    )
     result = load_orders(path, catalogue, "2026-02")
     assert len(result.lines) == 1
 
@@ -142,8 +146,11 @@ def test_rejected_line_keeps_line_number_and_raw_row(tmp_path, catalogue):
 
 
 def test_invalid_lines_are_not_fatal_and_order_is_kept(tmp_path, catalogue):
-    rows = [VALID, "O-2,L-2,2026-02-11,C-0001,P-0001,x,117.06,FR,",
-            VALID.replace("L-1", "L-3").replace(",2,", ",7,")]
+    rows = [
+        VALID,
+        "O-2,L-2,2026-02-11,C-0001,P-0001,x,117.06,FR,",
+        VALID.replace("L-1", "L-3").replace(",2,", ",7,"),
+    ]
     result = load_orders(write_csv(tmp_path, *rows), catalogue, "2026-02")
     assert [line.order_line_id for line in result.lines] == ["L-1", "L-3"]
     assert [r.line_number for r in result.rejected] == [3]
