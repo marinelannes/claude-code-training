@@ -1,4 +1,4 @@
-# Lab 4 · A loop with a judge (60 min, in pairs)
+# Lab 4 · A loop with a judge 
 
 **Goal:** fix a module with a loop that runs on its own until a judge says green, then
 audit what it did.
